@@ -1,0 +1,57 @@
+var nav = document.querySelector("header");
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 20) {
+        nav.classList.add("scroll-on");
+    } else {
+        nav.classList.remove("scroll-on");
+    }
+};
+
+
+const openBtn = document.getElementById("openMenu");
+const closeBtn = document.getElementById("closeMenu");
+const mobileMenu = document.getElementById("mobileMenu");
+
+openBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+    mobileMenu.classList.add("translate-x-0");
+});
+
+closeBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+    mobileMenu.classList.remove("translate-x-0");
+});
+
+function closeMenu() {
+    mobileMenu.classList.add("translate-x-full");
+    mobileMenu.classList.remove("translate-x-0");
+}
+
+
+$('.hero-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    dots: false,
+    prevArrow: '<button type="button" class="slick-prev absolute top-1/2 left-4 z-10 -translate-y-1/2 text-white p-3 min-w-30 min-h-16"><</button>',
+    nextArrow: '<button type="button" class="slick-next absolute top-1/2 right-4 z-10 -translate-y-1/2  text-white p-3 min-w-30 min-h-16">></button>',
+    fade: true,
+    speed: 800
+});
+
+const modal = document.getElementById('bookingModal');
+
+function openModal() {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+}
+
+function closeModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+}
+
+// Optional: Close modal on background click
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+});
