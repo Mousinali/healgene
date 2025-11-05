@@ -125,28 +125,95 @@
                 </div>
 
             </nav>
-
-            <!-- Fullscreen Overlay Menu -->
-            <div id="mobileMenu"
-                class="fixed top-0 end-0 bottom-0 w-[300px]  bg-white  flex flex-col items-center justify-center z-50 transform translate-x-full transition-transform duration-300 ease-in-out">
-
-                <!-- Close Button -->
-                <button id="closeMenu" class="absolute top-6 right-6 hover:scale-110 transition-transform"
-                    aria-label="Close Menu">
-                    <i class="ri-close-line text-4xl"></i>
-                </button>
-
-
-                <!-- Menu Links -->
-                <ul class="space-y-8 text-3xl text-center font-light tracking-wide">
-                    <li><a href="#" class="hover:text-indigo-400">Home</a></li>
-                    <li><a href="#" class="hover:text-indigo-400">About</a></li>
-                    <li><a href="#" class="hover:text-indigo-400">Services</a></li>
-                    <li><a href="#" class="hover:text-indigo-400">Portfolio</a></li>
-                    <li><a href="#" class="hover:text-indigo-400">Pricing</a></li>
-                    <li><a href="#" class="hover:text-indigo-400">Contact</a></li>
-                </ul>
+            <div id="backdrop" class="fixed inset-0 bg-black/50 opacity-0 invisible transition-all duration-300 z-40">
             </div>
+            <!-- Fullscreen Overlay Menu -->
+            <!-- Mobile Menu Backdrop -->
+            <div id="backdrop" class="fixed inset-0 bg-black/50 opacity-0 invisible transition-all duration-300 z-40">
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu"
+                class="fixed top-0 right-0 bottom-0 w-[320px] bg-white flex flex-col shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+
+                <!-- Header -->
+                <div class="flex justify-between items-center px-5 py-3 border-b border-gray-200">
+                    <img src="assets/images/logo/logo.webp" class="h-[36px]" alt="Logo">
+                    <button id="closeMenu" aria-label="Close Menu" class="cursor-pointer">
+                        <i class="ri-close-line text-3xl text-gray-700 hover:text-red-600"></i>
+                    </button>
+                </div>
+
+                <!-- Menu Items -->
+                <ul class="flex flex-col divide-y divide-dotted divide-gray-300">
+                    <li><a href="#" class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Home</a>
+                    </li>
+                    <li><a href="#" class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">About Us</a>
+                    </li>
+                    <li><a href="#" class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Services</a>
+                    </li>
+                    <li><a href="#" class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Senior Plans</a>
+                    </li>
+                    <li><a href="#" class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Health Blogs</a>
+                    </li>
+                    <li><a href="#" class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Contact Us</a></li>
+                </ul>
+
+                <!-- Contact Info -->
+                <ul class="flex flex-col divide-y divide-dotted divide-gray-300 mt-2 text-sm border-t border-slate-200">
+                    <!-- Phone -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            Phone
+                        </span>
+                        <p class="mt-1">
+                            <a href="tel:9163261134"
+                                class="text-[var(--primary-color)] hover:underline font-medium">9163261134</a>
+                            <span class="text-gray-500 mx-1">/</span>
+                            <a href="tel:9830126400"
+                                class="text-[var(--primary-color)] hover:underline font-medium">9830126400</a>
+                        </p>
+                    </li>
+
+                    <!-- Email -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            Email
+                        </span>
+                        <p class="mt-1">
+                            <a href="mailto:info@healgene.life"
+                                class="block text-[var(--primary-color)] hover:underline font-medium">info@healgene.life</a>
+                            <a href="mailto:healgene.life@gmail.com"
+                                class="block text-[var(--primary-color)] hover:underline font-medium mt-2">healgene.life@gmail.com</a>
+                        </p>
+                    </li>
+                    <!-- Corporate Office -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            Corporate Office
+                        </span>
+                        <p class="mt-1 leading-relaxed text-gray-600">
+                            Regus, RDB Boulevard, 5th Floor, BP Block, Sector V, Bidhannagar,<br>
+                            Kolkata, West Bengal 700091
+                        </p>
+                    </li>
+
+                    <!-- City Office -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            City Office
+                        </span>
+                        <p class="mt-1 leading-relaxed text-gray-600">
+                            FA-8, 2082, Rajdanga Main Road, Narkelbagan, Sector F, East Kolkata Township,<br>
+                            Kolkata, West Bengal 700107
+                        </p>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
         </div>
     </header>
 
@@ -230,8 +297,7 @@
 
     </section>
 
-    <section class="lg:pb-16 pb-12  relative overflow-hidden lg:pt-16 pt-5">
-
+    <section class="lg:pb-16 pb-12  relative overflow-hidden lg:pt-16 pt-12">
         <div class="container relative z-10">
             <div class="text-center mb-14">
                 <h2 class="text-3xl md:text-4xl font-bold text-[#1b263b] mb-3">Our Specialized Services</h2>
@@ -343,7 +409,7 @@
             <div class="flex flex-col md:flex-row items-center justify-between gap-10">
 
                 <!-- Left Content -->
-                <div class="md:w-1/2 py-20">
+                <div class="md:w-1/2 md:py-20 pt-10 pb-0">
                     <h2 class="text-2xl md:text-3xl font-bold text-[#1b263b] mb-4">
                         Book Your Appointment
                     </h2>
@@ -358,14 +424,14 @@
                 </div>
 
                 <!-- Right Image -->
-                <div class="md:w-1/2 flex justify-center md:justify-end absolute bottom-0 end-0">
+                <div class="md:w-1/2 flex justify-center md:justify-end md:absolute bottom-0 end-0">
                     <img src="assets/images/contact/cta-img.png" alt="Doctors" class="max-w-full  object-contain">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="lg:pt-16 lg:pb-12 py-4 about">
+    <section class="lg:pt-16 lg:pb-12 py-12 about">
         <div class="container">
             <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
                 <div class="lg:pr-8 pr-0"><img src="assets/images/about/about-img-main.png" alt="About"></div>
@@ -431,7 +497,7 @@
         </div>
     </section>
 
-    <section class="lg:py-16 py-5 bg-blue-50">
+    <section class="lg:py-16 py-12 bg-blue-50">
         <div class="container">
             <div class="text-center mb-14">
                 <h2 class="text-3xl md:text-4xl font-bold text-[#1b263b] mb-3">Our Partner</h2>
@@ -449,8 +515,176 @@
         </div>
     </section>
 
+    <section class="lg:py-16 py-12 blogs">
+        <div class="container">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1b263b] mb-3">Our Latest Blogs</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Stay informed with the latest ideas driving innovation in healthcare
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-3 sm:grid-col-2 grid-col-1 gap-8">
+                <div>
+                    <img src="assets/images/blogs/blog-1.webp" class="object-cover w-full aspect-[4/3] rounded-xl"
+                        alt="">
+                    <div class="p-2 mt-2">
+                        <h3 class="md:text-xl text-md font-medium text-[var(--primary-color)]">Caring Beyond Age: How to
+                            Provide
+                            Comfort and Dignity for Seniors</h3>
+                        <p
+                            class="text-slate-700 leading-6  mt-3 mb-4 text-ellipsis line-clamp-3 overflow-hidden md:text-[16px] text-sm">
+                            Discover thoughtful ways to enhance the lives of seniors through compassionate care,
+                            emotional support, and a focus on dignity and independence.</p>
+                        <div class="flex justify-between items-center text-gray-700 text-sm">
+                            <span>By Admin</span>
+                            <span>22-10-2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/images/blogs/blog-2.webp" class="object-cover w-full aspect-[4/3] rounded-xl"
+                        alt="">
+                    <div class="p-2 mt-2">
+                        <h3 class="md:text-xl text-md font-medium text-[var(--primary-color)]">Nutrition After 60:
+                            Superfoods That
+                            Keep Seniors Strong and Energized</h3>
+                        <p
+                            class="text-slate-700 leading-6  mt-3 mb-4 text-ellipsis line-clamp-3 overflow-hidden md:text-[16px] text-sm">
+                            Explore
+                            essential superfoods that boost energy, strengthen immunity, and support healthy aging for
+                            seniors beyond 60.</p>
+                        <div class="flex justify-between items-center text-gray-700 text-sm">
+                            <span>By Admin</span>
+                            <span>22-10-2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/images/blogs/blog-3.webp" class="object-cover w-full aspect-[4/3] rounded-xl"
+                        alt="">
+                    <div class="p-2 mt-2">
+                        <h3 class="md:text-xl text-md font-medium text-[var(--primary-color)]">Gentle Exercises That
+                            Keep the
+                            Elderly Fit and Flexible</h3>
+                        <p
+                            class="text-slate-700 leading-6  mt-3 mb-4 text-ellipsis line-clamp-3 overflow-hidden md:text-[16px] text-sm">
+                            Learn
+                            simple, low-impact exercises designed to improve mobility, balance, and overall well-being
+                            for seniors.</p>
+                        <div class="flex justify-between items-center text-gray-700 text-sm">
+                            <span>By Admin</span>
+                            <span>22-10-2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <footer class="bg-[#f8fafc] text-gray-700 pt-12 pb-6">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
+                <!-- Logo + About -->
+                <div>
+                    <img src="assets/images/logo/logo.webp" alt="Healgene Logo" class="md:h-[70px] h-[55px] mb-5">
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Empowering better health and well-being through innovative and personalized care solutions.
+                    </p>
+                    <div class="flex gap-6 mt-6">
+                        <a href="#"><img src="assets/images/contact/icc.webp" class="h-[55px]" alt=""></a>
+                        <a href="#"><img src="assets/images/contact/msme.webp" class="h-[55px]" alt=""></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold text-[#0d728d] mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="#" class="hover:text-[#0d728d] transition-all">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-[#0d728d] transition-all">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-[#0d728d] transition-all">Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-[#0d728d] transition-all">Senior Plans</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-[#0d728d] transition-all">Health Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-[#0d728d] transition-all">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-semibold text-[#0d728d] mb-4">Contact Us</h3>
+                    <div class="space-y-3 text-sm leading-relaxed">
+                        <div>
+                            <h4 class="font-medium">Corporate Office:</h4>
+                            <p>Regus, RDB Boulevard, 5th Floor, BP Block, Sector V,<br>
+                                Bidhannagar, Kolkata, West Bengal 700091</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-medium">City Office:</h4>
+                            <p>FA-8, 2082, Rajdanga Main Road, Narkelbagan,<br>
+                                Sector F, East Kolkata Township,<br> Kolkata, West Bengal 700107</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-medium">Cuttack Centre:</h4>
+                            <p>Nishamani Nursing Home, Bajarakatbati Canal Road,<br>
+                                Cuttack - 753001</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Links -->
+                <div>
+                    <h3 class="text-xl font-semibold text-[#0d728d] mb-4">Get In Touch</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><span class="font-medium">Phone:</span> 9163261134, 9830126400</li>
+                        <li><span class="font-medium">Email:</span>
+                            <a href="mailto:info@healgene.life"
+                                class="text-[#0d728d] hover:underline">info@healgene.life</a>,
+                            <a href="mailto:healgene.life@gmail.com"
+                                class="text-[#0d728d] hover:underline">healgene.life@gmail.com</a>
+                        </li>
+                    </ul>
+                    <div class="flex gap-3 mt-6">
+                        <a href="#"
+                            class="w-10 h-10 border rounded-full flex items-center justify-center hover:bg-[#1877F2] hover:text-white transition duration-300 ease-in-out">
+                            <i class="ri-facebook-fill text-lg"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 border rounded-full flex items-center justify-center hover:bg-[#000000] hover:text-white transition duration-300 ease-in-out">
+                            <i class="ri-twitter-x-fill text-lg"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 border rounded-full flex items-center justify-center hover:bg-[#0077B5] hover:text-white transition duration-300 ease-in-out">
+                            <i class="ri-linkedin-fill text-lg"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 border rounded-full flex items-center justify-center hover:bg-[#DD2A7B] hover:text-white transition duration-300 ease-in-out">
+                            <i class="ri-instagram-line text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-200 mt-10 pt-6 text-center text-sm text-gray-500">
+                © 2025 Healgene Life. All rights reserved.
+            </div>
+        </div>
+    </footer>
 
 
 
