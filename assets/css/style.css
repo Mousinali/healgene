@@ -101,11 +101,11 @@
 }
 
 .banner {
-    height: calc(100vh - 76px);
+    height: calc(100vh - 86px);
 }
 
 .hero-img {
-    height: calc(100vh - 76px);
+    height: calc(100vh - 86px);
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
@@ -163,4 +163,20 @@ header.scroll-on {
 
 .animate-fadeInScale {
     animation: fadeInScale 0.3s ease-out forwards;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    display: flex;
+    animation: scroll 25s linear infinite;
+    width: calc(200%);
 }
