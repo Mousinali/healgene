@@ -108,6 +108,17 @@
     height: calc(100vh - 76px);
 }
 
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .banner {
+        height: auto;
+        padding: 2.5rem 0;
+    }
+
+    .hero-img {
+        height: 100vh;
+    }
+}
+
 header.scroll-on {
     position: fixed;
     top: 0;
