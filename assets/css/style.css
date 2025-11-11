@@ -108,21 +108,7 @@
     height: calc(100vh - 86px);
 }
 
-@media (min-width: 1200px) and (max-width: 1500px) {
-    .banner {
-        height: auto;
-    }
 
-    .hero-img {
-        height: 100vh;
-    }
-}
-
-@media (max-width: 992px) {
-    .banner {
-        height: auto;
-    }
-}
 
 header.scroll-on {
     position: fixed;
@@ -179,4 +165,32 @@ header.scroll-on {
     display: flex;
     animation: scroll 25s linear infinite;
     width: calc(200%);
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+    .banner {
+        height: auto;
+    }
+
+    .hero-img {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .banner {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .animate-scroll {
+        animation: scroll 20s linear infinite;
+    }
 }

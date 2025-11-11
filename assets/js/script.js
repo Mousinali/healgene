@@ -12,12 +12,16 @@ const openBtn = document.getElementById("openMenu");
 const closeBtn = document.getElementById("closeMenu");
 const mobileMenu = document.getElementById("mobileMenu");
 const backdrop = document.getElementById("backdrop");
+const body = document.body;
 
 openBtn.addEventListener("click", () => {
     mobileMenu.classList.remove("translate-x-full");
     mobileMenu.classList.add("translate-x-0");
     backdrop.classList.remove("opacity-0", "invisible");
     backdrop.classList.add("opacity-100", "visible");
+
+    // Disable scrolling
+    body.classList.add("overflow-hidden");
 });
 
 closeBtn.addEventListener("click", closeMenuHandler);
@@ -28,7 +32,11 @@ function closeMenuHandler() {
     mobileMenu.classList.remove("translate-x-0");
     backdrop.classList.add("opacity-0", "invisible");
     backdrop.classList.remove("opacity-100", "visible");
+
+    // Re-enable scrolling
+    body.classList.remove("overflow-hidden");
 }
+
 
 
 
@@ -58,4 +66,29 @@ function closeModal() {
 // Optional: Close modal on background click
 modal.addEventListener('click', (e) => {
     if (e.target === modal) closeModal();
+});
+document.querySelectorAll('.faq-toggle').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        const item = toggle.closest('.faq-item');
+        const content = item.querySelector('.faq-content');
+        const icon = item.querySelector('.plus-icon');
+
+        document.querySelectorAll('.faq-item').forEach(i => {
+            if (i !== item) {
+                i.querySelector('.faq-content').style.maxHeight = null;
+                i.querySelector('.plus-icon').style.transform = 'rotate(0deg)';
+                i.classList.remove('border-blue-400', 'bg-blue-50/40');
+            }
+        });
+
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            icon.style.transform = 'rotate(0deg)';
+            item.classList.remove('border-blue-400', 'bg-blue-50/40');
+        } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+            icon.style.transform = 'rotate(45deg)';
+            item.classList.add('border-blue-400', 'bg-blue-50/40');
+        }
+    });
 });

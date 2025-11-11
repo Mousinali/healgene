@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healgene | About Us</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/libs/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+     <header class="py-3 bg-white border-1 border-b border-gray-200 absolute top-0 left-0 w-full z-10">
+        <div class="container">
+            <nav class="hidden lg:block bg-white">
+                <div class="mx-auto flex justify-between items-center">
+                    <!-- Logo -->
+                    <div class="w-[145px]">
+                        <a href="index.html"><img src="assets/images/logo/logo.webp" class="h-[60px]" alt=""></a>
+                    </div>
+
+                    <!-- Nav Links -->
+                    <ul class="flex gap-4 text-gray-800 font-medium items-center">
+                        <li>
+                            <a href="index.html"
+                                class="relative group m-2 transition-all duration-300 text-gray-700 hover:text-[var(--primary-color)]">
+                                Home
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[var(--primary-color)] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html"
+                                class="relative group m-2 transition-all duration-300 text-gray-700 hover:text-[var(--primary-color)]">
+                                About Us
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[var(--primary-color)] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+
+                        <li class="relative group m-2 mr-0">
+                            <a href="#"
+                                class="relative transition-all duration-300 text-gray-700 hover:text-[var(--primary-color)] align-content-center">
+                                Services<i class="ri-arrow-drop-down-fill text-xl leading-1"></i>
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[var(--primary-color)] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+
+                            <!-- Dropdown Menu -->
+                            <ul
+                                class="absolute left-0 top-10 min-w-50 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 border border-gray-200 z-10 overflow-hidden pb-2 pt-1">
+                                <li>
+                                    <a href="#"
+                                        class="block text-sm px-4 py-[6px] text-gray-700 hover:text-[var(--primary-color)] hover:bg-slate-100 transition-all">Diagnostics</a>
+                                </li>
+                                <li>
+                                    <a href="eldercare.html"
+                                        class="block text-sm px-4 py-[6px] text-gray-700 hover:text-[var(--primary-color)] hover:bg-slate-100 transition-all">Elderly
+                                        Care</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block text-sm px-4 py-[6px] text-gray-700 hover:text-[var(--primary-color)] hover:bg-slate-100 transition-all">Home
+                                        Healthcare</a>
+                                </li>
+                                <li>
+                                    <a href="lifestyle.html"
+                                        class="block text-sm px-4 py-[6px] text-gray-700 hover:text-[var(--primary-color)] hover:bg-slate-100 transition-all">Lifestyle
+                                        Management</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="relative group m-2 transition-all duration-300 text-gray-700 hover:text-[var(--primary-color)]">
+                                Plans
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[var(--primary-color)] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="blogs.html"
+                                class="relative group m-2 transition-all duration-300 text-gray-700 hover:text-[var(--primary-color)]">
+                                Health blogs
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[var(--primary-color)] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html"
+                                class="relative group m-2 transition-all duration-300 text-gray-700 hover:text-[var(--primary-color)]">
+                                Contact Us
+                                <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[var(--primary-color)] transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Button -->
+                    <button onclick="openModal()" class="btn1 !py-2.5">
+                        Enquiry now
+                        <i class="ri-arrow-right-long-line"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Navbar -->
+            <nav class="lg:hidden bg-white flex justify-between items-center">
+                <a href="#"><img src="assets/images/logo/logo.webp" class="h-[50px]" alt=""></a>
+
+                <!-- Hamburger Button -->
+                <div class="flex items-center gap-4 text-3xl">
+                    <i class="ri-whatsapp-line text-green-600 cursor-pointer"></i>
+                    <button id="openMenu" class="p-1" aria-label="Open Menu">
+                        <i class="ri-menu-line cursor-pointer"></i>
+                    </button>
+                </div>
+
+            </nav>
+            <div id="backdrop" class="fixed inset-0 bg-black/50 opacity-0 invisible transition-all duration-300 z-40">
+            </div>
+            <!-- Fullscreen Overlay Menu -->
+            <!-- Mobile Menu Backdrop -->
+            <div id="backdrop" class="fixed inset-0 bg-black/50 opacity-0 invisible transition-all duration-300 z-40">
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu"
+                class="fixed top-0 right-0 bottom-0 w-[320px] bg-white flex flex-col shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+
+                <!-- Header -->
+                <div class="flex justify-between items-center px-5 py-3 border-b border-gray-200">
+                    <img src="assets/images/logo/logo.webp" class="h-[36px]" alt="Logo">
+                    <button id="closeMenu" aria-label="Close Menu" class="cursor-pointer">
+                        <i class="ri-close-line text-3xl text-gray-700 hover:text-red-600"></i>
+                    </button>
+                </div>
+
+                <!-- Menu Items -->
+                <ul class="flex flex-col divide-y divide-dotted divide-gray-300">
+                    <li><a href="index.html"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Home</a>
+                    </li>
+                    <li><a href="about.html"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">About Us</a>
+                    </li>
+                    <li><a href="#" class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Services</a>
+                    </li>
+                    <li><a href="#" class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Plans</a>
+                    </li>
+                    <li><a href="blogs.html"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Health
+                            Blogs</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Contact
+                            Us</a></li>
+                </ul>
+
+                <!-- Contact Info -->
+                <ul class="flex flex-col divide-y divide-dotted divide-gray-300 mt-2 text-sm border-t border-slate-200">
+                    <!-- Phone -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            Phone
+                        </span>
+                        <p class="mt-1">
+                            <a href="tel:9163261134"
+                                class="text-[var(--primary-color)] hover:underline font-medium">9163261134</a>
+                            <span class="text-gray-500 mx-1">/</span>
+                            <a href="tel:9830126400"
+                                class="text-[var(--primary-color)] hover:underline font-medium">9830126400</a>
+                        </p>
+                    </li>
+
+                    <!-- Email -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            Email
+                        </span>
+                        <p class="mt-1">
+                            <a href="mailto:info@healgene.life"
+                                class="block text-[var(--primary-color)] hover:underline font-medium">info@healgene.life</a>
+                            <a href="mailto:healgene.life@gmail.com"
+                                class="block text-[var(--primary-color)] hover:underline font-medium mt-2">healgene.life@gmail.com</a>
+                        </p>
+                    </li>
+                    <!-- Corporate Office -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            Corporate Office
+                        </span>
+                        <p class="mt-1 leading-relaxed text-gray-600">
+                            Regus, RDB Boulevard, 5th Floor, BP Block, Sector V, Bidhannagar,<br>
+                            Kolkata, West Bengal 700091
+                        </p>
+                    </li>
+
+                    <!-- City Office -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            City Office
+                        </span>
+                        <p class="mt-1 leading-relaxed text-gray-600">
+                            FA-8, 2082, Rajdanga Main Road, Narkelbagan, Sector F, East Kolkata Township,<br>
+                            Kolkata, West Bengal 700107
+                        </p>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section
+        class="lg:mt-[86px] mt-[76px] bg-[url('assets/images/banner/inner-bg.jpg')] bg-cover bg-center md:h-[200px] min-h-[100px] py-3 flex items-center">
+        <div class="container text-white">
+            <h2 class="md:text-3xl text-xl font-bold text-white md:mb-2 mb-1">About Us</h2>
+            <nav class="sm:text-sm text-[12px]">
+                <ol class="flex space-x-2 text-white">
+                    <li><a href="index.html"
+                            class="hover:text-[var(--primary-color)] duration-200 transition-all">Home</a></li>
+                    <li>/</li>
+                    <li>About Us</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="lg:pt-16 lg:pb-12 py-12 about">
+        <div class="container">
+            <div class="flex lg:flex-row flex-col lg:justify-between gap-6">
+                <div class="lg:w-1/2 xl:pr-5 md:pr-3"><img src="assets/images/about/about-inner.png"
+                        class="aspect-square w-full object-cover rounded-2xl" alt="About"></div>
+                <div class="text-gray-800 lg:w-1/2">
+                    <h2
+                        class="text-3xl inline-block font-bold relative before:absolute before:top-1/2 before:-right-16 before:w-12 before:h-1 before:bg-[var(--primary-color)] mb-4">
+                        About Us
+                    </h2>
+
+                    <p class="xl:leading-7 leading-6 text-[14px] xl:text-[16px] font-normal mb-4">
+                        <span class="font-semibold">Healgene.life</span> (a unit of Healgene Lifesciences Pvt Ltd)— your
+                        trusted partner in healthcare,
+                        born with a vision to deliver quality medical care and preventive health solutions at the
+                        comfort of your home.
+                    </p>
+
+                    <p class="xl:leading-7 leading-6 text-[14px] xl:text-[16px] font-normal mb-4">
+                        We touch every stage of life with a holistic approach that blends medical expertise with
+                        compassion, convenience,
+                        and proactive care. Our mission is simple — to make healthcare <span
+                            class="font-semibold">personalized, accessible, and
+                            continuous.</span>
+                    </p>
+
+                    <p class="mb-4 xl:leading-7 leading-6 text-[14px] xl:text-[16px] font-normal">At Healgene.life, we
+                        believe prevention is the foundation of
+                        wellness. Our Lifestyle Management
+                        Programs empower individuals to prevent, manage, and overcome non-communicable diseases (NCDs)
+                        such as heart and lung disease, diabetes, cancer, obesity etc. through structured plans and
+                        professional guidance.</p>
+                    <p class="mb-4 xl:leading-7 leading-6 text-[14px] xl:text-[16px] font-normal">With the growing
+                        elderly population, we have thoughtfully designed a comprehensive Elderly Care
+                        Program to help seniors age gracefully — supporting their medical, emotional, daily living needs
+                        for a healthier, happier life.</p>
+                    <p class="xl:leading-7 leading-6 text-[14px] xl:text-[16px] font-normal">We also offer affordable
+                        diagnostics and genomic testing to detect health risks early and
+                        Homecare Services to ensure adherence of medical care, comfort, recovery and companionship after
+                        hospitalization or during long-term care. Healgene.life — because healthcare should evolve with
+                        you.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="relative lg:py-16 py-12 bg-gradient-to-b from-blue-50 via-white to-blue-50 overflow-hidden">
+        <div class="container">
+            <div>
+                <blockquote
+                    class="border-l-4 border-blue-700 pl-4 text-xl lg:text-3xl font-semibold italic text-gray-900 mb-8">
+                    “What if healthcare could come home — not just in emergencies, but as a way of life?”
+                </blockquote>
+
+                <div class="space-y-5 text-gray-700 leading-relaxed">
+                    <p class="text-sm sm:leading-7 leading-6 sm:text-lg">This question was born out of deeply personal experiences.</p>
+
+                    <p class="text-sm sm:leading-7 leading-6 sm:text-lg">We have seen our known ones face the challenges of aging —
+                        <span class="font-semibold text-gray-900">parents</span> struggling with everyday health issues,
+                        routine medical needs being delayed and small problems turning into big concerns.
+                    </p>
+
+                    <p class="text-sm sm:leading-7 leading-6 sm:text-lg">We have also witnessed the helplessness of
+                        <span class="font-semibold text-gray-900">children</span> living far away, anxious and unable to
+                        be physically present for their parents when it mattered most.
+                    </p>
+
+                    <p class="text-sm sm:leading-7 leading-6 sm:text-lg"><span class="font-semibold text-gray-900">Mid-age working professionals</span>, caught in the
+                        rush
+                        of deadlines, often neglect their health until severe symptoms appear. Lifestyle-related
+                        diseases
+                        like hypertension and chronic fatigue are rising — not due to lack of solutions, but due to the
+                        absence of integrated care in daily life.
+                    </p>
+
+                    <p class="text-sm sm:leading-7 leading-6 sm:text-lg">Meanwhile, <span class="font-semibold text-gray-900">young adults</span> are missing out on
+                        preventive
+                        healthcare — leading to serious concerns in later life. Over the years, our professional
+                        journeys
+                        exposed us to countless similar stories.
+                    </p>
+
+                    <p class="text-sm sm:leading-7 leading-6 sm:text-lg">The gap was undeniable — healthcare wasn’t just about hospitals and clinics, it was about
+                        <span class="font-semibold text-gray-900">accessibility and continuity</span>.
+                    </p>
+
+                    <p class="text-gray-800 font-medium text-sm sm:leading-7 leading-6 sm:text-lg">
+                        Determined to bridge this gap, <span
+                            class="italic text-blue-700 font-semibold">Healgene.life</span>
+                        was built with a vision to bring in <span class="font-semibold text-gray-900">quality
+                            healthcare</span>
+                        that is <span class="font-semibold text-gray-900">personalized, accessible and
+                            continuous</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lg:py-16 py-12 bg-white">
+        <div class="container">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1b263b] mb-3">Why Choose Healgene</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Dedicated to enhancing health and wellness through innovative, compassionate, and personalized care
+                    solutions.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 items-center gap-16">
+                <!-- Left Image -->
+                <div class="md:flex md:justify-center">
+                    <img src="assets/images/about/why.webp" alt="Why Choose Healgene" class="max-w-full h-auto">
+                </div>
+
+                <!-- Right Content -->
+                <div class="grid sm:grid-cols-2 gap-x-2 justify-end gap-y-10 md:col-span-2">
+                    <!-- 1 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="mt-1 w-5 h-5 rounded-full border border-blue-500 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-blue-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[#1b263b] text-xl">Personalized Care for Every Age</h4>
+                            <p class="text-gray-500 text-sm">Tailored solutions for every life stage.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="mt-1 w-5 h-5 rounded-full border border-blue-500 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-blue-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[#1b263b] text-xl">Hospital-Grade Healthcare at Home</h4>
+                            <p class="text-gray-500 text-sm">Expert care brought to your doorstep.</p>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="mt-1 w-5 h-5 rounded-full border border-blue-500 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-blue-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[#1b263b] text-xl">Comprehensive Elderly Care</h4>
+                            <p class="text-gray-500 text-sm">Specialized support for senior wellness.</p>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="mt-1 w-5 h-5 rounded-full border border-blue-500 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-blue-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[#1b263b] text-xl">Preventive & Lifestyle-Focused Approach
+                            </h4>
+                            <p class="text-gray-500 text-sm">Promoting long-term health and vitality.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="mt-1 w-5 h-5 rounded-full border border-blue-500 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-blue-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[#1b263b] text-xl">Technology & Human Touch</h4>
+                            <p class="text-gray-500 text-sm">Smart tools combined with compassionate care.</p>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="mt-1 w-5 h-5 rounded-full border border-blue-500 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-blue-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-[#1b263b] text-xl">Trusted Team of Experts</h4>
+                            <p class="text-gray-500 text-sm">Experienced professionals you can rely on.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="lg:py-16 py-12 bg-blue-50 overflow-hidden partners">
+        <div class="container">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1b263b] mb-3">Our Partners</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Partnering to advance health and wellness through innovation and personalized care.
+                </p>
+            </div>
+
+            <!-- Marquee Wrapper -->
+            <div class="relative w-full overflow-hidden">
+                <div class="flex items-center animate-scroll whitespace-nowrap xl:gap-60 2xl:gap-0 gap-0">
+                    <!-- Logos repeated twice for infinite loop -->
+                    <div class="flex items-center gap-5 sm:gap-10">
+                        <img src="assets/images/partners/part-1.webp" class="h-16 md:h-50 object-contain rounded-xl"
+                            alt="">
+                        <img src="assets/images/partners/part-2.webp" class="h-16 md:h-50 object-contain rounded-xl"
+                            alt="">
+                        <img src="assets/images/partners/part-5.webp" class="h-16 md:h-50 object-contain rounded-xl"
+                            alt="">
+                        <img src="assets/images/partners/part-3.webp" class="h-16 md:h-50 object-contain rounded-xl"
+                            alt="">
+                        <img src="assets/images/partners/part-4.webp" class="h-16 md:h-50 object-contain rounded-xl"
+                            alt="">
+                    </div>
+                    <div class="flex items-center gap-5 sm:gap-10 sm:mx-10 mx-10 ml-32 pl-3">
+                        <img src="assets/images/partners/part-1.webp" class="h-16 md:h-50 object-contain rounded-xl"
+                            alt="">
+                        <img src="assets/images/partners/part-2.webp" class="h-16 md:h-50 object-contain rounded-xl"
+                            alt="">
+                        <img src="assets/images/partners/part-5.webp" class="h-16 md:h-50 object-contain rounded-xl"
+                            alt="">
+                        <img src="assets/images/partners/part-3.webp" class="h-16 md:h-50 object-contain rounded-xl"
+                            alt="">
+                        <img src="assets/images/partners/part-4.webp" class="h-16 md:h-50 object-contain rounded-xl"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative lg:py-16 py-12 bg-gradient-to-b from-white via-blue-50/30 to-white overflow-hidden">
+        <div class="container relative z-10">
+            <!-- Header -->
+            <div class="text-center mb-14">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1b263b] mb-3">Frequently Asked Questions</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Learn more about our trusted healthcare services, our team, and how Healgene ensures care and
+                    comfort at home.
+                </p>
+            </div>
+
+            <!-- FAQ Wrapper -->
+            <div class="max-w-4xl mx-auto space-y-5">
+                <!-- FAQ Item -->
+                <div
+                    class="faq-item group bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl py-4 px-6 hover:shadow-xl hover:border-blue-200 transition-all duration-300">
+                    <button class="faq-toggle w-full flex justify-between items-center text-left cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-2 h-2 sm:inline-block hidden bg-blue-500 rounded-full group-hover:scale-125 transition-transform duration-300">
+                            </div>
+                            <h4
+                                class="sm:text-lg text-[14px] font-semibold text-[#1b263b] group-hover:text-blue-600 transition-colors duration-300">
+                                What services does Healgene provide at home?
+                            </h4>
+                        </div>
+                        <div
+                            class="icon-wrapper w-9 h-9 flex items-center justify-center rounded-full sm:bg-blue-50 text-blue-500 border-none sm:border sm:border-blue-200 bg-white transition-all duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 plus-icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="text-gray-600 pt-4 leading-relaxed sm:text-lg text-sm">
+                            Healgene offers doctor consultations, home nursing, physiotherapy, diagnostics, and elderly
+                            wellness programs—
+                            all designed for your comfort, convenience, and recovery within your own home.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item -->
+                <div
+                    class="faq-item group bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl py-4 px-6 hover:shadow-xl hover:border-blue-200 transition-all duration-300">
+                    <button class="faq-toggle w-full flex justify-between items-center text-left cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-2 h-2 sm:inline-block hidden bg-blue-500 rounded-full group-hover:scale-125 transition-transform duration-300">
+                            </div>
+                            <h4
+                                class="sm:text-lg text-[14px] font-semibold text-[#1b263b] group-hover:text-blue-600 transition-colors duration-300">
+                                Are your doctors and caregivers certified professionals?
+                            </h4>
+                        </div>
+                        <div
+                            class="icon-wrapper w-9 h-9 flex items-start sm:items-center justify-center rounded-full sm:bg-blue-50 text-blue-500 border-none sm:border sm:border-blue-200 bg-white transition-all duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 plus-icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="text-gray-600 pt-4 leading-relaxed sm:text-lg text-sm">
+                            Yes, every Healgene healthcare professional is certified, background-verified, and trained
+                            in home-care excellence
+                            to ensure your safety and well-being. Our hiring process includes skill assessments and
+                            continuous training updates.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item -->
+                <div
+                    class="faq-item group bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl py-4 px-6 hover:shadow-xl hover:border-blue-200 transition-all duration-300">
+                    <button class="faq-toggle w-full flex justify-between items-center text-left cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-2 h-2 sm:inline-block hidden bg-blue-500 rounded-full group-hover:scale-125 transition-transform duration-300">
+                            </div>
+                            <h4
+                                class="sm:text-lg text-[14px] font-semibold text-[#1b263b] group-hover:text-blue-600 transition-colors duration-300">
+                                How secure is my health information with Healgene?
+                            </h4>
+                        </div>
+                        <div
+                            class="icon-wrapper w-9 h-9 flex items-start sm:items-center justify-center rounded-full sm:bg-blue-50 text-blue-500 border-none sm:border sm:border-blue-200 bg-white transition-all duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 plus-icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="text-gray-600 pt-4 leading-relaxed sm:text-lg text-sm">
+                            We maintain full confidentiality using encrypted systems that comply with HIPAA and Indian
+                            healthcare data
+                            security standards. Your data is never shared with third parties without your consent.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- New FAQ Item -->
+                <div
+                    class="faq-item group bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl py-4 px-6 hover:shadow-xl hover:border-blue-200 transition-all duration-300">
+                    <button class="faq-toggle w-full flex justify-between items-center text-left cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-2 h-2 sm:inline-block hidden bg-blue-500 rounded-full group-hover:scale-125 transition-transform duration-300">
+                            </div>
+                            <h4
+                                class="sm:text-lg text-[14px] font-semibold text-[#1b263b] group-hover:text-blue-600 transition-colors duration-300">
+                                Do you provide emergency home healthcare services?
+                            </h4>
+                        </div>
+                        <div
+                            class="icon-wrapper w-9 h-9 flex items-start sm:items-center justify-center rounded-full sm:bg-blue-50 text-blue-500 border-none sm:border sm:border-blue-200 bg-white transition-all duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 plus-icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="text-gray-600 pt-4 leading-relaxed sm:text-lg text-sm">
+                            Yes, Healgene provides emergency medical support through our on-call doctors and rapid
+                            response nursing team.
+                            You can reach us 24/7 for urgent healthcare needs or post-hospital care assistance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- New FAQ Item -->
+                <div
+                    class="faq-item group bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl py-4 px-6 hover:shadow-xl hover:border-blue-200 transition-all duration-300">
+                    <button class="faq-toggle w-full flex justify-between items-center text-left cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-2 h-2 sm:inline-block hidden bg-blue-500 rounded-full group-hover:scale-125 transition-transform duration-300">
+                            </div>
+                            <h4
+                                class="sm:text-lg text-[14px] font-semibold text-[#1b263b] group-hover:text-blue-600 transition-colors duration-300">
+                                Can I schedule recurring visits for elderly care?
+                            </h4>
+                        </div>
+                        <div
+                            class="icon-wrapper w-9 h-9 flex items-start sm:items-center justify-center rounded-full sm:bg-blue-50 text-blue-500 border-none sm:border sm:border-blue-200 bg-white transition-all duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 plus-icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="text-gray-600 pt-4 leading-relaxed sm:text-lg text-sm">
+                            Absolutely! You can choose daily, weekly, or monthly care plans for elderly family members.
+                            We tailor each schedule based on their medical condition, routine, and lifestyle
+                            preferences.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- New FAQ Item -->
+                <div
+                    class="faq-item group bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl py-4 px-6 hover:shadow-xl hover:border-blue-200 transition-all duration-300">
+                    <button class="faq-toggle w-full flex justify-between items-center text-left cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-2 h-2 sm:inline-block hidden bg-blue-500 rounded-full group-hover:scale-125 transition-transform duration-300">
+                            </div>
+                            <h4
+                                class="sm:text-lg text-[14px] font-semibold text-[#1b263b] group-hover:text-blue-600 transition-colors duration-300">
+                                What areas does Healgene currently serve?
+                            </h4>
+                        </div>
+                        <div
+                            class="icon-wrapper w-9 h-9 flex items-start sm:items-center justify-center rounded-full sm:bg-blue-50 text-blue-500 border-none sm:border sm:border-blue-200 bg-white transition-all duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 plus-icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="text-gray-600 pt-4 leading-relaxed sm:text-lg text-sm">
+                            Healgene currently serves major cities including Kolkata, Delhi NCR, Mumbai, and Bangalore.
+                            We’re continuously expanding to more regions to make home healthcare more accessible across
+                            India.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#f8fafc] text-gray-700 pt-12 pb-6">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Logo + About -->
+                <div>
+                    <img src="assets/images/logo/logo.webp" alt="Healgene Logo" class="md:h-[70px] h-[55px] mb-5">
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Empowering better health and well-being through innovative and personalized care solutions.
+                    </p>
+                    <div class="flex gap-6 mt-6">
+                        <a href="#"><img src="assets/images/contact/icc.webp" class="h-[55px]" alt=""></a>
+                        <a href="#"><img src="assets/images/contact/msme.webp" class="h-[55px]" alt=""></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold text-[#0d728d] mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="index.html" class="hover:text-[#0d728d] transition-all">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="hover:text-[#0d728d] transition-all">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-[#0d728d] transition-all">Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-[#0d728d] transition-all">Plans</a>
+                        </li>
+                        <li>
+                            <a href="blogs.html" class="hover:text-[#0d728d] transition-all">Health Blogs</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="hover:text-[#0d728d] transition-all">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-semibold text-[#0d728d] mb-4">Contact Us</h3>
+                    <div class="space-y-3 text-sm leading-relaxed">
+                        <div>
+                            <h4 class="font-medium text-black">Corporate Office :</h4>
+                            <p>Regus, RDB Boulevard, 5th Floor, BP Block, Sector V,
+                                Bidhannagar, Kolkata, West Bengal 700091</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-medium text-black">City Office :</h4>
+                            <p>FA-8, 2082, Rajdanga Main Road, Narkelbagan,
+                                Sector F, East Kolkata Township, Kolkata, West Bengal 700107</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-medium text-black">Cuttack Centre :</h4>
+                            <p>Nishamani Nursing Home, Bajarakatbati Canal Road,
+                                Cuttack - 753001</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Links -->
+                <div>
+                    <h3 class="text-xl font-semibold text-[#0d728d] mb-4">Get In Touch</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><span class="font-medium text-black">Phone :</span> 9163261134, 9830126400</li>
+                        <li><span class="font-medium text-black">Email :</span>
+                            <a href="mailto:info@healgene.life"
+                                class="text-[#0d728d] hover:underline">info@healgene.life</a>,
+                            <a href="mailto:healgene.life@gmail.com"
+                                class="text-[#0d728d] hover:underline">healgene.life@gmail.com</a>
+                        </li>
+                    </ul>
+                    <div class="flex gap-3 mt-6">
+                        <a href="#"
+                            class="w-10 h-10 border rounded-full flex items-center justify-center hover:bg-[#1877F2] hover:text-white transition duration-300 ease-in-out">
+                            <i class="ri-facebook-fill sm:text-lg text-[14px]"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 border rounded-full flex items-center justify-center hover:bg-[#000000] hover:text-white transition duration-300 ease-in-out">
+                            <i class="ri-twitter-x-fill sm:text-lg text-[14px]"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 border rounded-full flex items-center justify-center hover:bg-[#0077B5] hover:text-white transition duration-300 ease-in-out">
+                            <i class="ri-linkedin-fill sm:text-lg text-[14px]"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 border rounded-full flex items-center justify-center hover:bg-[#DD2A7B] hover:text-white transition duration-300 ease-in-out">
+                            <i class="ri-instagram-line sm:text-lg text-[14px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-200 mt-10 pt-6 text-center text-sm text-gray-500">© 2025 Healgene Life. All
+                rights reserved.</div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="bookingModal"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm transition-opacity duration-500">
+        <div
+            class="relative w-[90%] max-w-lg bg-white rounded-2xl shadow-2xl p-8 sm:p-10 animate-fadeInScale overflow-hidden border border-gray-100">
+
+            <!-- Top Accent -->
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#0d728d] to-[#38bdf8]"></div>
+
+            <!-- Close Button -->
+            <button onclick="closeModal()"
+                class="absolute top-4 cursor-pointer right-4 text-gray-400 hover:text-red-500 text-2xl font-bold leading-none transition"><i
+                    class="ri-close-line"></i></button>
+
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <h3 class="text-3xl font-semibold text-[#1b263b] text-xl tracking-tight">Book Appointment</h3>
+                <p class="text-gray-600 mt-2 text-sm max-w-sm mx-auto">
+                    Select your preferred date and time. Our team will confirm your booking shortly.
+                </p>
+            </div>
+
+            <!-- Form -->
+            <form class="space-y-4">
+                <!-- Name -->
+                <div class="relative">
+                    <input type="text" id="fullname"
+                        class="peer w-full border border-gray-300 rounded-lg px-3 pt-5 pb-2 text-sm bg-white focus:ring-0.75 focus:ring-[#0d728d] focus:border-[#0d728d] outline-none"
+                        placeholder=" " />
+                    <label for="fullname"
+                        class="pointer-events-none absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0d728d]">Full
+                        Name</label>
+                </div>
+
+                <!-- Email -->
+                <div class="relative">
+                    <input type="email" id="email"
+                        class="peer w-full border border-gray-300 rounded-lg px-3 pt-5 pb-2 text-sm bg-white focus:ring-0.75 focus:ring-[#0d728d] focus:border-[#0d728d] outline-none"
+                        placeholder=" " />
+                    <label for="email"
+                        class="pointer-events-none absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0d728d]">Email
+                        Address</label>
+                </div>
+
+                <!-- Phone -->
+                <div class="relative">
+                    <input type="tel" id="phone"
+                        class="peer w-full border border-gray-300 rounded-lg px-3 pt-5 pb-2 text-sm bg-white focus:ring-0.75 focus:ring-[#0d728d] focus:border-[#0d728d] outline-none"
+                        placeholder=" " />
+                    <label for="phone"
+                        class="pointer-events-none absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0d728d]">Phone
+                        Number</label>
+                </div>
+
+                <!-- Date Picker -->
+                <div class="relative">
+                    <input type="date" id="date"
+                        class="peer w-full border border-gray-300 rounded-lg px-3 pt-5 pb-2 text-sm bg-white focus:ring-0.75 focus:ring-[#0d728d] focus:border-[#0d728d] outline-none appearance-none"
+                        placeholder=" " />
+                    <label for="date"
+                        class="pointer-events-none absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0d728d]">Preferred
+                        Date</label>
+
+
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="w-full btn1 !py-3 mt-4 justify-center">
+                    Confirm Appointment
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="assets/libs/slick/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
