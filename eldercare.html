@@ -14,7 +14,7 @@
 
 <body>
 
-     <header class="py-3 bg-white border-1 border-b border-gray-200 absolute top-0 left-0 w-full z-10">
+    <header class="py-3 bg-white border-1 border-b border-gray-200 absolute top-0 left-0 w-full z-10">
         <div class="container">
             <nav class="hidden lg:block bg-white">
                 <div class="mx-auto flex justify-between items-center">
@@ -241,172 +241,229 @@
     </section>
 
     <section class="lg:py-16 sm:py-12 py-8 bg-white">
-  <div class="container mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-4 gap-10">
+        <div class="container mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-4 gap-10">
 
-    <!-- LEFT SIDEBAR -->
-    <div class="relative">
-      <aside class="space-y-8 sticky top-[106px]">
-        <!-- Program Menu -->
-        <div class="bg-blue-50 rounded-2xl p-6 shadow-md">
-          <ul class="space-y-3">
-            <li class="flex justify-between items-center p-3 rounded-xl font-medium text-gray-700 hover:bg-[#007bba]/10 hover:text-[#007bba] cursor-pointer transition">
-              Diagnostics
-              <i class="ri-arrow-right-s-line"></i>
-            </li>
-            <li class="flex justify-between items-center p-3 bg-[#007bba]/10 rounded-xl font-semibold text-[#007bba] cursor-pointer hover:bg-[#007bba]/20 transition">
-              Elderly Care
-              <i class="ri-arrow-right-s-line"></i>
-            </li>
-            <li class="flex justify-between items-center p-3 rounded-xl font-medium text-gray-700 hover:bg-[#007bba]/10 hover:text-[#007bba] cursor-pointer transition">
-              Home Healthcare
-              <i class="ri-arrow-right-s-line"></i>
-            </li>
-            <li class="flex justify-between items-center p-3 rounded-xl font-medium text-gray-700 hover:bg-[#007bba]/10 hover:text-[#007bba] cursor-pointer transition">
-              Lifestyle Management
-              <i class="ri-arrow-right-s-line"></i>
-            </li>
-          </ul>
+            <!-- LEFT SIDEBAR -->
+            <div class="relative">
+                <aside class="space-y-8 sticky top-[106px]">
+                    <!-- Program Menu -->
+                    <div class="bg-blue-50 rounded-2xl p-6 shadow-md">
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="diagnostics.html"
+                                    class="flex justify-between items-center p-3 rounded-xl font-medium text-gray-700 hover:bg-[#007bba]/10 hover:text-[#007bba] cursor-pointer transition">
+                                    Diagnostics
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="eldercare.html"
+                                    class="flex justify-between items-center p-3 bg-[#007bba]/10 rounded-xl font-semibold text-[#007bba] cursor-pointer hover:bg-[#007bba]/20 transition">
+                                    Elderly Care
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="home-healthcare.html"
+                                    class="flex justify-between items-center p-3 rounded-xl font-medium text-gray-700 hover:bg-[#007bba]/10 hover:text-[#007bba] cursor-pointer transition">
+                                    Home Healthcare
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="lifestyle.html"
+                                    class="flex justify-between items-center p-3 rounded-xl font-medium text-gray-700 hover:bg-[#007bba]/10 hover:text-[#007bba] cursor-pointer transition">
+                                    Lifestyle Management
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- Contact Box -->
+                    <div class="bg-[#007bba] text-white p-8 rounded-2xl shadow-md text-center relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-full bg-white/10 backdrop-blur-sm"></div>
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-bold mb-3">Contact us for any advice</h3>
+                            <div class="my-6 flex justify-center">
+                                <div class="w-14 h-14 bg-white/20 flex items-center justify-center rounded-full">
+                                    <i class="ri-phone-line text-2xl"></i>
+                                </div>
+                            </div>
+                            <p class="text-sm mb-2 opacity-80">Need help? Talk to an expert</p>
+                            <p class="text-lg font-semibold">
+                                <a href="tel:+919163261134" class="hover:underline">+91 91632 61134</a>
+                            </p>
+
+                            <a href="#"
+                                class="mt-6 w-full block cursor-pointer bg-white text-[#007bba] font-semibold py-3 rounded-xl shadow hover:bg-blue-50 transition">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="lg:col-span-3 space-y-10">
+
+                <!-- Image -->
+                <div class="rounded-2xl overflow-hidden shadow-lg">
+                    <img src="assets/images/service/elderlycare.webp" alt="Elderly Care Program"
+                        class="w-full h-[400px] object-cover">
+                </div>
+
+                <!-- Program Description -->
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-3xl font-bold text-[#007bba] mb-4">Elderly Care Program</h2>
+                        <p class="text-gray-700 leading-relaxed mb-3">
+                            At <span class="font-semibold text-[#007bba]">Healgene.life</span>, our <span
+                                class="font-semibold">Elderly Care Program</span> is thoughtfully designed to provide
+                            <span class="font-semibold">comprehensive medical care, emotional support, daily living
+                                assistance, proactive health monitoring, and concierge services</span> —
+                            all within the familiar surroundings of home.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mb-3">
+                            We bring together a compassionate team of <span class="font-semibold">doctors, nurses,
+                                nutritionists, physiotherapists, and care managers</span>
+                            to create a <span class="font-semibold">personalized care plan</span> for every senior —
+                            ensuring that their medical, emotional, and lifestyle needs are met with empathy and
+                            expertise.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mb-3">
+                            With our <span class="font-semibold">24/7 Emergency Response System</span>, help is always
+                            just a call away. Whether it’s a sudden health concern or an urgent medical situation,
+                            our team ensures prompt attention and coordination with nearby hospitals or family members —
+                            offering complete peace of mind.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            From routine health monitoring and medication management to companionship and concierge
+                            assistance,
+                            we are committed to ensuring that every elderly individual feels <span
+                                class="font-semibold">safe, connected, valued, and cared for</span> — not just in
+                            health, but in happiness.
+                        </p>
+                    </div>
+
+                    <!-- Slider Section -->
+                    <div class="lifestyle-slider">
+                        <!-- Card 1 -->
+                        <div class="p-4">
+                            <div
+                                class="group bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center border border-slate-200">
+                                <div class="flex justify-center mb-4">
+                                    <img src="assets/images/service/eldercare/per-care.webp" alt="Medical Care"
+                                        class="object-cover aspect-video rounded-xl">
+                                </div>
+                                <h4 class="font-semibold text-gray-800 text-lg mb-2">Personalized Medical Care</h4>
+                                <p class="text-sm text-gray-600">Comprehensive healthcare at home with regular
+                                    check-ups, medication management, and doctor visits.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="p-4">
+                            <div
+                                class="group bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center border border-slate-200">
+                                <div class="flex justify-center mb-4">
+                                    <img src="assets/images/service/eldercare/psy.webp" alt="Wellness Support"
+                                        class="object-cover aspect-video rounded-xl">
+                                </div>
+                                <h4 class="font-semibold text-gray-800 text-lg mb-2">Emotional & Psychological Wellness
+                                </h4>
+                                <p class="text-sm text-gray-600">Emotional support, mental wellness activities, and
+                                    companionship to ensure peace of mind.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="p-4">
+                            <div
+                                class="group bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center border border-slate-200">
+                                <div class="flex justify-center mb-4">
+                                    <img src="assets/images/service/eldercare/emergency.webp" alt="Emergency Response"
+                                        class="object-cover aspect-video rounded-xl">
+                                </div>
+                                <h4 class="font-semibold text-gray-800 text-lg mb-2">24/7 Emergency Response</h4>
+                                <p class="text-sm text-gray-600">Immediate medical attention and coordination with
+                                    hospitals for any emergency needs.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="p-4">
+                            <div
+                                class="group bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center border border-slate-200">
+                                <div class="flex justify-center mb-4">
+                                    <img src="assets/images/service/eldercare/care-manager.webp" alt="Care Manager"
+                                        class="object-cover aspect-video rounded-xl">
+                                </div>
+                                <h4 class="font-semibold text-gray-800 text-lg mb-2">Dedicated Care Manager</h4>
+                                <p class="text-sm text-gray-600">A personal care coordinator to manage schedules,
+                                    appointments, and wellness tracking.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="p-4">
+                            <div
+                                class="group bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center border border-slate-200">
+                                <div class="flex justify-center mb-4">
+                                    <img src="assets/images/service/eldercare/travel.webp" alt="Travel Assistance"
+                                        class="object-cover aspect-video rounded-xl">
+                                </div>
+                                <h4 class="font-semibold text-gray-800 text-lg mb-2">Travel Assistance & Concierge</h4>
+                                <p class="text-sm text-gray-600">Support with medical transport, travel planning, and
+                                    everyday tasks for seniors.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="border-t border-gray-200"></div>
+
+                    <!-- Who Should Consider Section -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-[#1b263b] mb-3">Who Should Consider Elder Care at Home?
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Our program is ideal for families who want <span class="font-semibold">consistent, reliable,
+                                and compassionate care</span> for their loved ones.
+                            Whether living alone or with limited support, seniors deserve healthcare that is proactive,
+                            personal, and always within reach.
+                        </p>
+
+                        <h4 class="text-xl font-semibold text-[#007bba] mb-4">You or your loved ones may benefit from
+                            our program if:</h4>
+
+                        <ul class="space-y-3 text-gray-700 leading-relaxed">
+                            <li><span class="font-semibold">Regular Medical Support is Needed</span> – For seniors with
+                                chronic conditions like diabetes, hypertension, or heart disease who need continuous
+                                health monitoring.</li>
+                            <li><span class="font-semibold">Living Alone or Away from Family</span> – Elderly
+                                individuals staying independently or whose children live in other cities or abroad.</li>
+                            <li><span class="font-semibold">Post-Hospitalization Recovery</span> – Those who require
+                                follow-up care, physiotherapy, or nursing support after discharge.</li>
+                            <li><span class="font-semibold">Emotional Companionship & Mental Wellbeing</span> – Seniors
+                                who may feel lonely or isolated and need regular social interaction and engagement.</li>
+                            <li><span class="font-semibold">Emergency Support & Peace of Mind</span> – Families seeking
+                                assurance that 24/7 medical assistance is available whenever needed.</li>
+                            <li><span class="font-semibold">Assistance with Daily Living</span> – For those who need
+                                help with medications, meals, appointments, or routine health check-ups.</li>
+                            <li><span class="font-semibold">Preventive Health & Aging Well</span> – For proactive
+                                individuals who wish to maintain wellness, independence, and quality of life through
+                                structured health and lifestyle plans.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Contact Box -->
-        <div class="bg-[#007bba] text-white p-8 rounded-2xl shadow-md text-center relative overflow-hidden">
-          <div class="absolute top-0 left-0 w-full h-full bg-white/10 backdrop-blur-sm"></div>
-          <div class="relative z-10">
-            <h3 class="text-2xl font-bold mb-3">Contact us for any advice</h3>
-            <div class="my-6 flex justify-center">
-              <div class="w-14 h-14 bg-white/20 flex items-center justify-center rounded-full">
-                <i class="ri-phone-line text-2xl"></i>
-              </div>
-            </div>
-            <p class="text-sm mb-2 opacity-80">Need help? Talk to an expert</p>
-            <p class="text-lg font-semibold">
-              <a href="tel:+919163261134" class="hover:underline">+91 91632 61134</a>
-            </p>
-
-            <a href="#" class="mt-6 w-full block cursor-pointer bg-white text-[#007bba] font-semibold py-3 rounded-xl shadow hover:bg-blue-50 transition">
-              Download PDF
-            </a>
-          </div>
-        </div>
-      </aside>
-    </div>
-
-    <!-- RIGHT CONTENT -->
-    <div class="lg:col-span-3 space-y-10">
-
-      <!-- Image -->
-      <div class="rounded-2xl overflow-hidden shadow-lg">
-        <img src="assets/images/service/elderlycare.webp" alt="Elderly Care Program" class="w-full h-[400px] object-cover">
-      </div>
-
-      <!-- Program Description -->
-      <div class="space-y-8">
-        <div>
-          <h2 class="text-3xl font-bold text-[#007bba] mb-4">Elderly Care Program</h2>
-          <p class="text-gray-700 leading-relaxed mb-3">
-            At <span class="font-semibold text-[#007bba]">Healgene.life</span>, our <span class="font-semibold">Elderly Care Program</span> is thoughtfully designed to provide
-            <span class="font-semibold">comprehensive medical care, emotional support, daily living assistance, proactive health monitoring, and concierge services</span> —
-            all within the familiar surroundings of home.
-          </p>
-          <p class="text-gray-700 leading-relaxed mb-3">
-            We bring together a compassionate team of <span class="font-semibold">doctors, nurses, nutritionists, physiotherapists, and care managers</span>
-            to create a <span class="font-semibold">personalized care plan</span> for every senior — ensuring that their medical, emotional, and lifestyle needs are met with empathy and expertise.
-          </p>
-          <p class="text-gray-700 leading-relaxed mb-3">
-            With our <span class="font-semibold">24/7 Emergency Response System</span>, help is always just a call away. Whether it’s a sudden health concern or an urgent medical situation,
-            our team ensures prompt attention and coordination with nearby hospitals or family members — offering complete peace of mind.
-          </p>
-          <p class="text-gray-700 leading-relaxed">
-            From routine health monitoring and medication management to companionship and concierge assistance,
-            we are committed to ensuring that every elderly individual feels <span class="font-semibold">safe, connected, valued, and cared for</span> — not just in health, but in happiness.
-          </p>
-        </div>
-
-        <!-- Slider Section -->
-        <div class="lifestyle-slider">
-          <!-- Card 1 -->
-          <div class="p-4">
-            <div class="group bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center border border-slate-200">
-              <div class="flex justify-center mb-4">
-                <img src="assets/images/service/eldercare/per-care.webp" alt="Medical Care" class="object-cover aspect-video rounded-xl">
-              </div>
-              <h4 class="font-semibold text-gray-800 text-lg mb-2">Personalized Medical Care</h4>
-              <p class="text-sm text-gray-600">Comprehensive healthcare at home with regular check-ups, medication management, and doctor visits.</p>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="p-4">
-            <div class="group bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center border border-slate-200">
-              <div class="flex justify-center mb-4">
-                <img src="assets/images/service/eldercare/psy.webp" alt="Wellness Support" class="object-cover aspect-video rounded-xl">
-              </div>
-              <h4 class="font-semibold text-gray-800 text-lg mb-2">Emotional & Psychological Wellness</h4>
-              <p class="text-sm text-gray-600">Emotional support, mental wellness activities, and companionship to ensure peace of mind.</p>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="p-4">
-            <div class="group bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center border border-slate-200">
-              <div class="flex justify-center mb-4">
-                <img src="assets/images/service/eldercare/emergency.webp" alt="Emergency Response" class="object-cover aspect-video rounded-xl">
-              </div>
-              <h4 class="font-semibold text-gray-800 text-lg mb-2">24/7 Emergency Response</h4>
-              <p class="text-sm text-gray-600">Immediate medical attention and coordination with hospitals for any emergency needs.</p>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="p-4">
-            <div class="group bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center border border-slate-200">
-              <div class="flex justify-center mb-4">
-                <img src="assets/images/service/eldercare/care-manager.webp" alt="Care Manager" class="object-cover aspect-video rounded-xl">
-              </div>
-              <h4 class="font-semibold text-gray-800 text-lg mb-2">Dedicated Care Manager</h4>
-              <p class="text-sm text-gray-600">A personal care coordinator to manage schedules, appointments, and wellness tracking.</p>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="p-4">
-            <div class="group bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center border border-slate-200">
-              <div class="flex justify-center mb-4">
-                <img src="assets/images/service/eldercare/travel.webp" alt="Travel Assistance" class="object-cover aspect-video rounded-xl">
-              </div>
-              <h4 class="font-semibold text-gray-800 text-lg mb-2">Travel Assistance & Concierge</h4>
-              <p class="text-sm text-gray-600">Support with medical transport, travel planning, and everyday tasks for seniors.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Divider -->
-        <div class="border-t border-gray-200"></div>
-
-        <!-- Who Should Consider Section -->
-        <div>
-          <h3 class="text-2xl font-semibold text-[#1b263b] mb-3">Who Should Consider Elder Care at Home?</h3>
-          <p class="text-gray-700 leading-relaxed mb-4">
-            Our program is ideal for families who want <span class="font-semibold">consistent, reliable, and compassionate care</span> for their loved ones.
-            Whether living alone or with limited support, seniors deserve healthcare that is proactive, personal, and always within reach.
-          </p>
-
-          <h4 class="text-xl font-semibold text-[#007bba] mb-4">You or your loved ones may benefit from our program if:</h4>
-
-          <ul class="space-y-3 text-gray-700 leading-relaxed">
-            <li><span class="font-semibold">Regular Medical Support is Needed</span> – For seniors with chronic conditions like diabetes, hypertension, or heart disease who need continuous health monitoring.</li>
-            <li><span class="font-semibold">Living Alone or Away from Family</span> – Elderly individuals staying independently or whose children live in other cities or abroad.</li>
-            <li><span class="font-semibold">Post-Hospitalization Recovery</span> – Those who require follow-up care, physiotherapy, or nursing support after discharge.</li>
-            <li><span class="font-semibold">Emotional Companionship & Mental Wellbeing</span> – Seniors who may feel lonely or isolated and need regular social interaction and engagement.</li>
-            <li><span class="font-semibold">Emergency Support & Peace of Mind</span> – Families seeking assurance that 24/7 medical assistance is available whenever needed.</li>
-            <li><span class="font-semibold">Assistance with Daily Living</span> – For those who need help with medications, meals, appointments, or routine health check-ups.</li>
-            <li><span class="font-semibold">Preventive Health & Aging Well</span> – For proactive individuals who wish to maintain wellness, independence, and quality of life through structured health and lifestyle plans.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
