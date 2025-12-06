@@ -299,11 +299,6 @@
                             <p class="text-lg font-semibold">
                                 <a href="tel:+919163261134" class="hover:underline">+91 91632 61134</a>
                             </p>
-
-                            <a href="#"
-                                class="mt-6 w-full block cursor-pointer bg-white text-[#007bba] font-semibold py-3 rounded-xl shadow hover:bg-blue-50 transition">
-                                Download PDF
-                            </a>
                         </div>
                     </div>
                 </aside>
@@ -423,6 +418,19 @@
                                     everyday tasks for seniors.</p>
                             </div>
                         </div>
+                        <div class="p-4">
+                            <div
+                                class="group bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center border border-slate-200">
+                                <div class="flex justify-center mb-4">
+                                    <img src="assets/images/service/eldercare/ambulance.webp" alt="Travel Assistance"
+                                        class="object-cover aspect-video rounded-xl">
+                                </div>
+                                <h4 class="font-semibold text-gray-800 text-lg mb-2">Ambulance Service</h4>
+                                <p class="text-sm text-gray-600">Quick and reliable medical transportation service
+                                    available anytime for seniors.</p>
+
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Divider -->
@@ -465,9 +473,6 @@
             </div>
         </div>
     </section>
-
-
-
 
     <footer class="bg-[#f8fafc] text-gray-700 pt-12 pb-6">
         <div class="container mx-auto px-6 md:px-12">
@@ -538,12 +543,14 @@
                 <div>
                     <h3 class="text-xl font-semibold text-[#0d728d] mb-4">Get In Touch</h3>
                     <ul class="space-y-2 text-sm">
-                        <li><span class="font-medium text-black">Phone :</span> 9163261134, 9830126400</li>
+                        <li><span class="font-medium text-black">Phone :</span> <a href="tel:9163261134">9163261134</a>, <a href="tel:9830126400">9830126400</a></li>
                         <li><span class="font-medium text-black">Email :</span>
                             <a href="mailto:info@healgene.life"
                                 class="text-[#0d728d] hover:underline">info@healgene.life</a>,
                             <a href="mailto:healgene.life@gmail.com"
                                 class="text-[#0d728d] hover:underline">healgene.life@gmail.com</a>
+                            <a href="mailto:healgenelifesciences@gmail.com"
+                                class="text-[#0d728d] hover:underline">healgenelifesciences@gmail.com</a>
                         </li>
                     </ul>
                     <div class="flex gap-3 mt-6">
@@ -574,7 +581,7 @@
     </footer>
 
     <!-- Modal -->
-   <div id="bookingModal"
+    <div id="bookingModal"
         class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm transition-opacity duration-500">
         <div
             class="relative w-[90%] max-w-lg bg-white rounded-2xl shadow-2xl p-8 sm:p-10 animate-fadeInScale overflow-hidden border border-gray-100">
@@ -678,6 +685,15 @@
             });
         });
     </script>
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                openModal();
+            }, 3000);
+        });
+    </script>
+
+
 
 </body>
 
